@@ -1,0 +1,57 @@
+/* 1)space we get at above and sides is => body (has margin and padding by default)
+                                        => removed by (margin:0; padding:0;)
+                                        => side space removed but top not
+Eventhough we get top space this is => Every tag (has default margin and padding)
+       
+   FOR Universal application we use "*" instead of body and padding seperately.
+        body{margin:0;               => * {margin:0;
+          padding:0;}                      padding:0;}
+          +                          => In total page default spaces removed
+        header{padding:0;}
+*/
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+header{
+    padding:10px;
+    border-bottom:2px solid rgb(51, 50, 50);
+}
+
+nav {
+   padding:10px;
+   border-bottom:2px solid rgb(51, 50, 50);
+}
+
+nav span{
+    margin-left: 10px;
+}
+
+nav span:first-child{
+    border-bottom:2px solid rgb(51, 50, 50);
+}
+
+img{
+    float:right;
+    margin: 10px;
+}
+
+.content{
+    margin:20px;
+}
+.content p{
+    margin-bottom:10px;
+}
+
+body{
+max-width:600px;
+width:100%;
+margin:auto;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(9, 147, 193)
+}
